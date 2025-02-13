@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -39,4 +40,22 @@ h1 {
 iframe {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16 / 9;
 }
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .lecture-link {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .video-container {
+        padding: 20px;
+    }
+}
+
