@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -41,16 +42,36 @@ h1 {
     padding: 50px;
     max-width: 100%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 
 iframe {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    width: 100%;
+    width: 90vw;
     max-width: 560px;
     height: auto;
     aspect-ratio: 16 / 9;
     box-sizing: border-box;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.4);
 }
 
 @media (max-width: 600px) {
@@ -64,5 +85,11 @@ iframe {
     .video-container {
         padding: 20px;
     }
+    iframe {
+        width: 95vw;
+    }
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }
-
